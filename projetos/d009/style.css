@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(to right, #B5BAD0, #7389AE);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #416788;
+    text-shadow: 0px 0px 2px #213647;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    gap: 20px; /* Espaçamento entre os vídeos */
+}
+
+a {
+    display: block;
+}
+
+img {
+    width: 300px;
+    height: 180px;
+}
