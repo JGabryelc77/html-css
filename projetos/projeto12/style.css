@@ -10,6 +10,10 @@
     font-size: 16px;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color: white;
@@ -17,14 +21,14 @@ header {
 }
 
 header > h1{
-    padding-top: 50px;
-    font-size: 3.5em;
     font-family: "Lilita One", sans-serif;
     font-style: normal;
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 8vw;
     margin: 0px;
     position: relative;
     width: 100%;
-
 }
 
 header > p{
@@ -41,21 +45,18 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
-p {
+section {
     font-family: 'EB Garamond';
     font-style: normal;
-}
-
-section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
-    font-size: 3.5vw;
     line-height: 2em;
+    padding-left: 30px;
+    font-size: 3vw;
 }
 
 section > p{
-    padding-bottom: 32px;
+    padding-bottom: 1em;
     font-size: 1.5em;
 }
 
@@ -65,9 +66,8 @@ section.normal {
 }
 
 section.imagem {
-    background-color: black;
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.50);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -76,24 +76,23 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.50);
     padding: 5px;
     display: inline-block;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 0px black;
 }
 
 section.imagem#img1 {
     background-image: url('imagens/background001.jpg');
-    background-position: right center;
+    background-position: center center;
     position: relative;
-    
 }
 
 section.imagem#img2 {
     background-image: url('imagens/background002.jpg');
     background-position: left center;
+    position: relative;
 }
 
 footer {
     padding: 10px;
-    font-size: 2em;
     background-color: black;
     color: white;
     text-align: center;
