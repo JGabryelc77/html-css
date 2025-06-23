@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Formulário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Menu de Login</h1>
+                <p>Seja bem-vindo(a). Faça login para acessar sua conta com segurança.</p>
+                <form action="login.php" method="post">
+                    <div class="campo"> 
+                        <!-- Campo de email -->
+                         <span class="material-symbols-outlined">Mail</span>
+                        <input type="email" name="email" id="iemail" placeholder="xxxx@xxxxxx.xxx" autocomplete="email" required maxlength="30">
+                        <label for="login"></label>
+                    </div>
+                    <div class="campo">
+                        <!-- campo de senha -->
+                         <span class="material-symbols-outlined">Passkey</span>
+                         <input type="password" name="senha" id="isenha" placeholder="mín: 12 caracteres" required minlength="12" maxlength="20">
+                         <label for="senha"></label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="senha.html" class="botao">
+                        Esqueci a senha<span class="material-symbols-outlined">help</span>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: linear-gradient(to top, #11122A, #C243A9, #0B0D1B);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /*Texto Dentro da caixa*/
+
+    background-color: white;
+    width: 300px;
+    height: 570px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    transition: .3s
+}
+
+#login > div#imagem {
+    display: block;
+    background: url('../imagens/spectrum.jpg') no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+div#formulario p {
+    font-size: 16px;
+    text-align: center;
+}
+
+form > div.campo {
+    background-color: #8787BB;
+    border: 2px solid #1C2141;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50px;
+    margin: 3px 0px;
+}
+
+form > div.campo > span {
+    width: 40px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+form > div.campo > input{
+    font-size: 22px;
+    height: 100%;
+    width: calc(100%, -50px);
+    border-radius: 0px 25px 25px 0px;
+    padding: 4px;
+    transform: translateY(-3px);
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 32px;
+    width: 100%;
+    height: 40px;
+    background-color: #C243A9;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer; /*Símbolo no mouse indicando clique*/
+}
+
+form > input[type=submit]:hover {
+    background-color: #c243a9b3;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    background-color: #612154;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+form > a.botao:hover {
+    background-color: #c243a9b3;
+}
+
+
